@@ -3,18 +3,19 @@
  Brandon Le
  Deliverable 4
 **************/
-	/*Body Styling */
-	body{
-		font-family:Verdana, Tahoma, sans-serif;
-		font-size: 12pt;
-		background-image: url('../images/image.png');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		overflow-y: hidden;
+/*Body Styling */
+body{
+	font-family:Verdana, Tahoma, sans-serif;
+	font-size: 12pt;
+	background-image: url('../images/image.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: hidden;
+}
+html{
 		cursor: url('../cursor/cursor.png'), default;
 }
-
