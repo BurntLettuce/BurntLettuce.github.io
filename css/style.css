@@ -9,8 +9,6 @@
 		font-size: 12pt;
 		background-image: url('../images/image.png');
 		background-size: cover; /* Ensures the image covers the entire page */
-		background-position: center; /* Centers the image */
-		background-repeat: no-repeat; /* Prevents repeating the image */
 		height: 100%;  /* Ensures the page takes up the full height */
 		margin: 0;     /* Removes default margin */
 		cursor: url('../cursor/cursor.png'), auto;
