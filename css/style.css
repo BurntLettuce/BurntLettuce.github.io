@@ -8,11 +8,12 @@
 		font-family:Verdana, Tahoma, sans-serif;
 		font-size: 12pt;
 		margin: 0;
+		background-image: url('./images/image.png');
 	}
 
 	/*Header Styling */
 	.header {
-		background-image: url('https://swe.umbc.edu/~ble6/deliverable5/banner.png '); /* Header image */
+		background-color: #808080;		
 		height: 8%;
 		justify-content: center;
 		top: 0;
