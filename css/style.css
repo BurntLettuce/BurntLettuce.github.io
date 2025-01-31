@@ -13,5 +13,6 @@
 		background-repeat: no-repeat; /* Prevents repeating the image */
 		height: 100%;  /* Ensures the page takes up the full height */
 		margin: 0;     /* Removes default margin */
+		cursor: url('path/to/your/cursor.png'), auto;
 }
 
