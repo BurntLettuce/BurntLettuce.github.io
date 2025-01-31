@@ -8,7 +8,7 @@
 		font-family:Verdana, Tahoma, sans-serif;
 		font-size: 12pt;
 		margin: 0;
-		background-image: url('./images/image.png');
+		background-image: url('../images/image.png');
 	}
 
 	/*Header Styling */
