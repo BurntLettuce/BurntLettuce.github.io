@@ -26,45 +26,63 @@ body {
   to { opacity: 1; }
 }
 
-/* Styling for smaller boxes around the edges */
-.box {
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 2px solid #fff;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  opacity: 0.9;
-}
 
-/* Fixed position for left-side boxes */
-.box:nth-child(odd) {
-  left: 5vw; /* 5% from the left edge */
-  top: 20vh; /* 20% from the top of the viewport */
-}
-
-/* Fixed position for right-side boxes */
-.box:nth-child(even) {
-  right: 5vw; /* 5% from the right edge */
-  top: 20vh; /* 20% from the top of the viewport */
-}
-
-/* Main Box Styling */
+/* Styling for the main box */
 .main-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid #fff;
-  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Box styling */
+.box {
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 200px;
+  color: white;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Style for the box headers */
+h2 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
