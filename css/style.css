@@ -38,12 +38,12 @@ html, body {
   background-position: bottom;  /* Center the image inside the box */
   position: fixed;
   top: 50%;
-  left: 35%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;  /* Adjust width if needed */
+  width: 60%;  /* Adjust width if needed */
   height: 50%;  /* Adjust height if needed */
 }
 
