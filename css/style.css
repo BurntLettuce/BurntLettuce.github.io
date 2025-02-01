@@ -39,26 +39,19 @@ body {
   border: 2px solid #fff;
   padding: 10px;
   box-sizing: border-box;
+  text-align: center;
+  opacity: 0.9; /* Slight transparency */
 }
 
-.top-left {
-  top: 20px;
-  left: 20px;
+/* Place boxes randomly on left or right side of the screen */
+.box:nth-child(odd) {
+  left: 0;
+  top: calc(20px + (50vh - 100px) * (Math.random())); /* Random top position for left side */
 }
 
-.top-right {
-  top: 20px;
-  right: 20px;
-}
-
-.bottom-left {
-  bottom: 20px;
-  left: 20px;
-}
-
-.bottom-right {
-  bottom: 20px;
-  right: 20px;
+.box:nth-child(even) {
+  right: 0;
+  top: calc(20px + (50vh - 100px) * (Math.random())); /* Random top position for right side */
 }
 
 /* Main Box Styling (Center Box) */
