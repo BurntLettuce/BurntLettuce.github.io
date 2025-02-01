@@ -19,9 +19,12 @@ body {
   animation: fadeIn 2s forwards;
   color: white;
 }
+
+/* Apply custom cursor for the entire page */
 html, body {
   cursor: url('../cursor/cursor.cur'), auto;
 }
+
 /* Fade-In Animation */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -30,7 +33,7 @@ html, body {
 
 /* Styling for the main box */
 .main-box {
-  background-image: url('../images/main_image.jpg');	
+  background-image: url('../images/main_image.jpg');
   position: fixed;
   top: 50%;
   left: 50%;
@@ -40,6 +43,7 @@ html, body {
   border-radius: 10px;
 }
 
+/* Styling for headings and text inside the main box */
 h1 {
   font-size: 2rem;
 }
@@ -58,20 +62,25 @@ p {
   color: white;
 }
 
+/* Top-left box */
 .top-left {
   top: 10%;
   left: 10%;
 }
 
+/* Top-right box */
 .top-right {
   top: 10%;
   right: 10%;
 }
+
+/* Bottom-left box */
 .bottom-left {
   bottom: 10%;
   left: 10%;
 }
 
+/* Bottom-right box */
 .bottom-right {
   bottom: 10%;
   right: 10%;
