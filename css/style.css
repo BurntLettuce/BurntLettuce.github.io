@@ -30,6 +30,7 @@ html, body {
 
 /* Styling for the main box */
 .main-box {
+  background-image: url('../images/main_image.jpg');	
   position: fixed;
   top: 50%;
   left: 50%;
