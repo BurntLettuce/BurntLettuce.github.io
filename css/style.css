@@ -29,7 +29,7 @@ body {
 
 /* Styling for the main box */
 .main-box {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,7 +49,7 @@ p {
 
 /* Box styling */
 .box {
-  position: absolute;
+  position: relative;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
