@@ -33,7 +33,7 @@ html, body {
 
 /* Styling for the main box */
 .main-box {
-  background-image: url('../images/main_image.jpg'); /* Ensure the path is correct */
+  background-image: url('../images/main_image.jpg');
   background-size: cover;  /* Make sure the image covers the entire box */
   background-position: bottom;  /* Center the image inside the box */
   position: fixed;
@@ -42,7 +42,7 @@ html, body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 60%;  /* Adjust width if needed */
+  width: 80%;  /* Adjust width if needed */
   height: 50%;  /* Adjust height if needed */
 }
 
