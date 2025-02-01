@@ -26,10 +26,9 @@ body {
   to { opacity: 1; }
 }
 
-
 /* Styling for the main box */
 .main-box {
-  position: relative;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,7 +48,7 @@ p {
 
 /* Box styling */
 .box {
-  position: relative;
+  position: fixed;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
@@ -58,23 +57,33 @@ p {
 }
 
 .top-left {
-  top: 20px;
-  left: 20px;
+  top: 10%;
+  left: 10%;
 }
 
 .top-right {
-  top: 20px;
-  right: 20px;
+  top: 10%;
+  right: 10%;
+}
+
+.middle-left {
+  top: 40%;
+  left: 10%;
+}
+
+.middle-right {
+  top: 40%;
+  right: 10%;
 }
 
 .bottom-left {
-  bottom: 20px;
-  left: 20px;
+  bottom: 10%;
+  left: 10%;
 }
 
 .bottom-right {
-  bottom: 20px;
-  right: 20px;
+  bottom: 10%;
+  right: 10%;
 }
 
 /* Style for the box headers */
