@@ -1,16 +1,29 @@
-/*Body Styling */
-body{
-	font-family:Verdana, Tahoma, sans-serif;
-	font-size: 12pt;
-	background-image: url('../images/image.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow-y: hidden;
-	cursor: url('../cursor/cursor.cur'), auto;
+/**************
+ IS 448
+ Brandon Le
+ Deliverable 4
+**************/
+
+/* Body Styling */
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12pt;
+  background-image: url('../images/image.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden;
+  cursor: url('../cursor/cursor.cur'), auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  opacity: 0; /* Start as invisible */
+  animation: fadeIn 2s forwards; /* Apply fade-in animation */
 }
 
 /* Fade-In Animation */
@@ -21,4 +34,51 @@ body{
   100% {
     opacity: 1; /* Fully visible */
   }
+}
+
+/* Styling for smaller boxes around the edges */
+.box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #fff;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Main Box Styling (Center Box) */
+.main-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
 }
