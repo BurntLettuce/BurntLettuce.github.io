@@ -28,7 +28,7 @@ body {
 
 /* Styling for smaller boxes around the edges */
 .box {
-  position: absolute;
+  position: fixed;
   width: 150px;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -39,15 +39,16 @@ body {
   opacity: 0.9;
 }
 
-/* Random position for left/right boxes */
+/* Fixed position for left-side boxes */
 .box:nth-child(odd) {
-  left: 0;
-  top: calc(20px + (calc(50vh - 100px) - 150px) * (Math.random())); /* Adjusting space for 150px box height */
+  left: 5vw; /* 5% from the left edge */
+  top: 20vh; /* 20% from the top of the viewport */
 }
 
+/* Fixed position for right-side boxes */
 .box:nth-child(even) {
-  right: 0;
-  top: calc(20px + (calc(50vh - 100px) - 150px) * (Math.random())); /* Adjusting space for 150px box height */
+  right: 5vw; /* 5% from the right edge */
+  top: 20vh; /* 20% from the top of the viewport */
 }
 
 /* Main Box Styling */
