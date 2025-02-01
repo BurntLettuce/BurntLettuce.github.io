@@ -17,6 +17,7 @@ body {
   position: relative;
   opacity: 0;
   animation: fadeIn 2s forwards;
+  color: white;
 }
 html, body {
   cursor: url('../cursor/cursor.cur'), auto;
