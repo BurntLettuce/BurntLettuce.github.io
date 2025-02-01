@@ -35,14 +35,14 @@ html, body {
 .main-box {
   background-image: url('../images/main_image.jpg');
   background-size: cover;  /* Make sure the image covers the entire box */
-  background-position: bottom;  /* Center the image inside the box */
+  background-position: center;  /* Center the image inside the box */
   position: fixed;
   top: 50%;
   left: 50%;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;  /* Adjust width if needed */
+  width: 60%;  /* Adjust width if needed */
   height: 50%;  /* Adjust height if needed */
 }
 
