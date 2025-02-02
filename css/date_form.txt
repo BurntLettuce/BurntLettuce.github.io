@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Me Form</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #09585d;
+        font-family: "Oswald";
+        font-size: 1.3rem;
+        text-decoration:none;
+    }
+    a, input{
+        cursor:pointer;
+        padding: 2px 10px;
+        border-radius: 5px;
+    }
+    .main-bg {
+        background: #ece9e2;
+    }
+    .title{
+        margin-bottom: 1rem;
+    }
+    .bord{
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 80%;
+        border: 1px solid #cfcfcf;
+        margin-bottom:2rem;
+        padding: 1rem .5rem 1rem .5rem;
+    }
+    .content {
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding-top:2rem;
+        margin-bottom:2rem;
+        width: 80%;
+        border: 1 solid #cfcfcf;
+        background: #f2dcde;
+        text-align: center;
+        border-radius: .3rem;
+    }
+    form.content{
+        padding-bottom:2rem;
+    }
+    .check{
+        width:100%;
+    }
+    .check-1, .check-2, .check-3{
+        padding: 1rem 2rem .5rem 2rem;
+        display:flex;
+        justify-content: space-between;
+    }
+    .checkbox-align{
+        padding-right: 2rem;
+    }
+    .gender{
+        margin: 0 10px;
+    }
+    textarea{
+        width:100%;
+        height: 20vh;
+        padding: 4px 10px;
+        border-radius: 5px;
+    }
+    textarea:focus, input:focus{
+        outline: 2px solid #98bcbe;
+    }
+    ::placeholder{
+        font-size:1rem;
+    }
+    a.btn{
+        background: #09585d;
+        color:#fff;
+        padding:.7rem;
+        border-radius:5px;
+    }
+    </style>
+</head>
+<body class="main-bg">
+    <form  class="content">
+        <h2 class="title">Application for date</h2>
+        <p class="note">
+            <b>Note : </b>
+            All information is final. No changes can be made.
+        </p>
+        <fieldset class="bord">
+            <legend>
+                <h2 class="title">Personal Details</h2>
+            </legend>
+            <label>Name : </label>
+                <input type="text" placeholder="Enter your name here"> <br> <br>
+            <label>Email : </label>
+                <input type="text" placeholder="Enter your email here"> <br> <br>
+            <label>Address : </label>
+                <input type="text" placeholder="Enter your address here"> <br> <br>
+            <label>Phone Number : </label>
+                <input type="text" placeholder="Enter your phone number here">  <br> <br>
+            <label>Date of Date: </label>
+                <input type="date">       
+        </fieldset>
+        <fieldset class="bord">
+            <h2 class="title">Check all that apply</h2>
+            <table class="check">
+                <tr class="check-1">
+                    <td><input type="checkbox"> <label>I want tiramisu</label></td>
+                    <td><input type="checkbox"> <label>I want to pay</label></td>
+                </tr>
+                <tr class="check-2">
+                    <td><input type="checkbox"> <label>Are we driving?</label></td>
+                    <td><input type="checkbox"> <label>Are we dressing fancy?</label></td>
+                </tr>
+                <tr class="check-3">
+                    <td><input type="checkbox"> <label>Specific place</label></td>
+                    <td><input type="checkbox"> <label>Have fun and do whatever</label></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="bord">
+            <legend>Essay</legend>
+            <p>In at least 50 words, explain who, why, when, where, and woof</p>
+            <textarea placeholder="Enter your reasons why..."></textarea>
+        </fieldset>
+        <a href="#" class="btn">Send Your Application</a>
+    </form>    
+    <script>
+        // Get the checkbox and the input field
+        const specificPlaceCheckbox = document.getElementById('specific-place-checkbox');
+        const specificPlaceInput = document.getElementById('specific-place-input');
+
+        // Add an event listener to toggle the visibility of the input field
+        specificPlaceCheckbox.addEventListener('change', function() {
+            if (specificPlaceCheckbox.checked) {
+                specificPlaceInput.style.display = 'block';  // Show the input field
+            } else {
+                specificPlaceInput.style.display = 'none';  // Hide the input field
+            }
+        });
+    </script>	
+</body>
+</html>
