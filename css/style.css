@@ -29,58 +29,38 @@ body {
 /* Styling for the main box */
 .main-box {
   background-image: url('../images/main_image.jpg');
-  background-size: cover;  /* Make sure the image covers the entire box */
-  background-position: center;  /* Center the image inside the box */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* This centers the box */
+  background-size: cover;
+  background-position: center;
+  position: relative;  /* Relative positioning to keep it within the normal flow */
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 30%;  /* Adjust width if needed */
-  height: 60%;  /* Adjust height if needed */
+  width: 50%;  /* Adjust width to leave room for the sidebars */
+  height: 60%;
+  z-index: 2;  /* Ensure the main box is on top of the sidebars */
 }
 
 /* Box styling */
 .box {
-  position: fixed;
+  position: absolute;  /* Position absolute to take them out of the flow */
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  width: 200px;
+  width: 200px;  /* Set fixed width for the sidebars */
   color: white;
-  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-/* Box Hover Effect */
-.box:hover {
-  transform: scale(1.1); /* Makes the box grow slightly on hover */
-  background-color: rgba(0, 0, 0, 0.8); /* Darkens the background on hover */
+  z-index: 1;  /* Ensure the sidebars are below the main box */
 }
 
 /* Top-left box */
 .top-left {
-  top: 10%;
-  left: 10%;
-}
-
-/* Top-right box */
-.top-right {
-  top: 10%;
-  right: 10%;
+  top: 20%;  /* Position from the top */
+  left: 0;   /* Align to the left edge */
 }
 
 /* Bottom-left box */
 .bottom-left {
-  bottom: 10%;
-  left: 10%;
-}
-
-/* Bottom-right box */
-.bottom-right {
-  bottom: 10%;
-  right: 10%;
+  bottom: 20%;  /* Position from the bottom */
+  left: 0;   /* Align to the left edge */
 }
 
 /* Style for the box headers */
