@@ -20,11 +20,6 @@ body {
   color: white;
 }
 
-/* Apply custom cursor for the entire page */
-html, body {
-  cursor: url('../cursor/cursor.cur'), auto;
-}
-
 /* Fade-In Animation */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -47,15 +42,6 @@ html, body {
   height: 60%;  /* Adjust height if needed */
 }
 
-/* Styling for headings and text inside the main box */
-h1 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
 /* Box styling */
 .box {
   position: fixed;
@@ -64,6 +50,13 @@ p {
   border-radius: 10px;
   width: 200px;
   color: white;
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Box Hover Effect */
+.box:hover {
+  transform: scale(1.1); /* Makes the box grow slightly on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Darkens the background on hover */
 }
 
 /* Top-left box */
