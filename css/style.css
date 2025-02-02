@@ -43,8 +43,8 @@ html, body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 30%;  /* Adjust width if needed */
-  height: 40%;  /* Adjust height if needed */
+  width: 40%;  /* Adjust width if needed */
+  height: 50%;  /* Adjust height if needed */
 }
 
 /* Styling for headings and text inside the main box */
