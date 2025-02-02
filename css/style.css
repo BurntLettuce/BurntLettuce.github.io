@@ -31,7 +31,7 @@ body {
   background-image: url('../images/main_image.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
+  position: relative;  /* Relative positioning to keep it within the normal flow */
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -51,17 +51,16 @@ body {
   z-index: 1;  /* Ensure the sidebars are below the main box */
 }
 
-/* Left-side boxes (stacked) */
-.left-boxes {
-  position: absolute;
-  top: 20%;   /* Adjust to position where you want the left boxes */
-  left: 0;    /* Align to the left edge */
-  display: flex;
-  flex-direction: column;
+/* Top-left box */
+.top-left {
+  top: 20%;  /* Position from the top */
+  left: 0;   /* Align to the left edge */
 }
 
-.top-left {
-  margin-bottom: 10px; /* Add space between the top and bottom box */
+/* Bottom-left box */
+.bottom-left {
+  bottom: 20%;  /* Position from the bottom */
+  left: 0;   /* Align to the left edge */
 }
 
 /* Style for the box headers */
