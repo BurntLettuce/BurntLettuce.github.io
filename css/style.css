@@ -9,11 +9,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-y: hidden;
+  overflow: hidden; /* Prevent scrolling */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   position: relative;
   opacity: 0;
   animation: fadeIn 2s forwards;
@@ -31,7 +30,7 @@ body {
   background-image: url('../images/main_image.jpg');
   background-size: cover;  /* Make sure the image covers the entire box */
   background-position: center;  /* Center the image inside the box */
-  position: fixed;
+  position: absolute;  /* Change to absolute so it's centered */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  /* This centers the box */
@@ -64,10 +63,16 @@ body {
   right: 10%;
 }
 
-/* Bottom-left box */
+/* Bottom-left box (game area) */
 .bottom-left {
-  bottom: 10%;
-  left: 10%;
+  bottom: 0;
+  left: 0;
+  width: 100vw;  /* Make it fill the entire width */
+  height: 100vh;  /* Make it fill the entire height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);  /* Optional: makes background darker */
 }
 
 /* Bottom-right box */
@@ -84,4 +89,18 @@ h2 {
 
 p {
   font-size: 1rem;
+}
+
+/* Game target styling */
+#target {
+  position: absolute;
+  background-color: red; /* You can change the color */
+  cursor: pointer;
+  transition: left 0.1s, top 0.1s; /* Smooth transition */
+}
+
+/* Slider Styling */
+input[type="range"] {
+  width: 80%; /* Make sliders wider */
+  margin: 10px 0;
 }
